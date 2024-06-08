@@ -93,7 +93,7 @@ export default function Home() {
       </section>
 
       <section id="About" className="flex w-full h-fit items-center justify-center -mt-10">
-
+   
       </section>
 
 
