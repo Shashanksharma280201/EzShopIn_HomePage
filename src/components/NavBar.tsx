@@ -44,14 +44,14 @@ const NavBar = () => {
                         </ul>
                         <hr className="mt-4 w-full lg:hidden" />
                         <div className="my-4 flex items-center space-x-6 space-y-2 lg:my-0 lg:ml-auto lg:space-x-8 lg:space-y-0">
-                            <div className="flex text-black text-xl w-full">
+                            {/* <div className="flex text-black text-xl w-full">
                                 <a href="">
                                     <h1>Login</h1>
                                 </a>
-                            </div>
+                            </div> */}
                             <div className="block text-white rounded-md hover:bg-gray-500 bg-black">
                                 <a href="\Sign-up">
-                                    <Button>Register</Button>
+                                    <Button>Contact us</Button>
                                 </a>
                             </div>
                         </div>
