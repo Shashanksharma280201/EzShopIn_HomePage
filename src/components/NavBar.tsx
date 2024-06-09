@@ -39,8 +39,8 @@ const NavBar = () => {
                         <ul className="flex w-full flex-col items-center space-y-2 lg:flex-row lg:justify-center lg:space-y-0">
                             <li className="lg:mr-12"><a className="rounded text-black transition focus:outline-none focus:ring-1 text-xl " href="#Home">Home</a></li>
                             <li className="lg:mr-12"><a className="rounded text-black transition focus:outline-none focus:ring-1 text-xl " href="#About">About</a></li>
-                            <li className="lg:mr-12"><a className="rounded text-black transition focus:outline-none focus:ring-1 text-xl " href="#Pricing">Pricing</a></li>
-                            <li className="lg:mr-12"><a className="rounded text-black transition focus:outline-none focus:ring-1 text-xl " href="#FAQ">FAQ</a></li>
+                            <li className="lg:mr-12"><a className="rounded text-black transition focus:outline-none focus:ring-1 text-xl " href="#Contact">Contact</a></li>
+                            <li className="lg:mr-12"><a className="rounded text-black transition focus:outline-none focus:ring-1 text-xl " href="#Contact">Team</a></li>
                         </ul>
                         <hr className="mt-4 w-full lg:hidden" />
                         <div className="my-4 flex items-center space-x-6 space-y-2 lg:my-0 lg:ml-auto lg:space-x-8 lg:space-y-0">

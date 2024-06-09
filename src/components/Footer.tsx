@@ -28,9 +28,9 @@ const Footer = () => {
                                         <img src="images\linkedin.svg" alt="instagram" style={{ maxWidth: "100%", maxHeight: "100%" }} />
                                     </a>
                                 </div>
-                                <div className='flex justify-center items-center w-[25px]'>
+                                <div className='flex justify-center items-center w-[20px]'>
                                     <a href="#">
-                                        <img src="images\twitter.svg" alt="instagram" style={{ maxWidth: "100%", maxHeight: "100%" }} />
+                                        <img src="images\twitter.png" alt="instagram" style={{ maxWidth: "100%", maxHeight: "100%" }} />
                                     </a>
                                 </div>
                             </div>

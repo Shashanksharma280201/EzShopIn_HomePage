@@ -4,11 +4,12 @@ import { PlaceholdersAndVanishInput } from "../ui/placeholders-and-vanish-input"
 
 export function VanishInput() {
     const placeholders = [
-        "What's the first rule of Fight Club?",
-        "Who is Tyler Durden?",
-        "Where is Andrew Laeddis Hiding?",
-        "Write a Javascript method to reverse a string",
-        "How to assemble your own PC?",
+        "Cargo Pants",
+        "Chunky Sneakers",
+        "Boxy T-shirts",
+        "Sweatshirts and Hoodies",
+        "Track Pants and Joggers",
+        "Baggy Jeans",
     ];
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -19,9 +20,9 @@ export function VanishInput() {
         console.log("submitted");
     };
     return (
-        <div className=" flex flex-col justify-center items-center px-4">
-            <h2 className="sm:mb-10 text-xl text-center sm:text-3xl dark:text-white text-black">
-                Search for your favourite item on EzShopIn
+        <div className=" flex flex-col justify-center items-center px-4 space-y-4">
+            <h2 className="sm:mb-10 text-center sm:text-3xl font-semibold text-black">
+                You can search for your favourite item on EzShopIn
             </h2>
             <PlaceholdersAndVanishInput
                 placeholders={placeholders}

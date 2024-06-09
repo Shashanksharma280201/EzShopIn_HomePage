@@ -9,7 +9,7 @@ export function ScrollAnimation() {
             <ContainerScroll
                 titleComponent={
                     <>
-                        <h1 className="text-7xl font-semibold text-black">
+                        <h1 className=" text-5xl md:text-7xl font-semibold text-black">
                             Easy to use <br />
                             <span className="text-4xl md:text-[6rem] text-gray-600 font-bold mt-1 leading-none">
                                 Dashboard
