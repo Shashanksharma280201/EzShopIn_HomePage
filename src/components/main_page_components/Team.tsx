@@ -6,19 +6,19 @@ const people = [
         id: 1,
         name: "Shashank Sharma",
         designation: "Founder / CEO",
-        image:"/images/Shashank.png"
+        image: "/images/Shashank.png"
     },
     {
         id: 2,
         name: "Srijan Dubey",
         designation: "Co-Founder / CTO",
-        image:"/images/Srijan.png"
-   },
+        image: "/images/Srijan.png"
+    },
     {
         id: 3,
         name: "Sansar Singh",
         designation: "Co-Founder / CMO",
-        image:"/images/Sansar.png"
+        image: "/images/Sansar.png"
     },
 ];
 

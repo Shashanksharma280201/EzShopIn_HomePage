@@ -15,10 +15,10 @@ export default function Home() {
     <>
       <NavBar />
 
-      <section id="Home" className="flex font-mono flex-col bg-gradient-to-r from-purple-300 to-pink-100 h-fit rounded-b-full shadow-xl w-full">
+      <section id="Home" className="flex font-mono flex-col  h-fit  w-full">
 
         {/* top heading */}
-        <div className="flex relative flex-col w-full h-screen items-center justify-center">
+        <div className="flex relative flex-col w-full bg-gradient-to-r from-purple-300 to-pink-100 h-screen rounded-b-full shadow-xl items-center justify-center">
           <div className="flex flex-col bg-transparent space-y-5 w-full md:w-3/4 items-center justify-center p-6">
             <h1 className="flex flex-col font-semibold text-5xl md:text-6xl text-center">Join the best experience of <span className="text-gray-500"> offline shopping</span></h1>
             <h1 className="flex text-2xl w-full md:w-3/4 opacity-80 md:text-4xl text-center">Connect with us to have the software integrated in your system</h1>
@@ -214,7 +214,7 @@ export default function Home() {
       </section>
 
 
-      <section id="Contact" className="flex flex-col h-screen mt-10 font-mono w-full items-center justify-center font-ubuntu">
+      <section id="Contact" className="flex flex-col h-screen mt-10 bg-gradient-to-r from-green-100 via-yellow-100 to-orange-100 rounded-3xl font-mono w-full items-center justify-center font-ubuntu">
         <h1 className="flex text-2xl md:text-4xl w-full md:w-1/2 p-4 mt-10 justify-center text-center font-semibold">Contact us to integrate our software in your stores today</h1>
         <p className="flex text-sm md:text-xl opacity-75 w-full justify-center text-center">For more details on click on the buttons below, feel free to get in touch</p>
 
@@ -224,10 +224,10 @@ export default function Home() {
             <h1 className="flex text-3xl">Contact us</h1>
             <div className="flex flex-col w-fit h-fit justify-between items-center p-3">
               <a href="tel:+919591678076">
-                <h1 className="flex p-4 text-2xl opacity-75">+91 9591678076</h1>
+                <h1 className="flex p-4 text-lg lg:text-2xl opacity-75">+91 9591678076</h1>
               </a>
               <a href="mailto:ezshopinindia@gmail.com">
-                <h1 className="flex text-2xl opacity-75">ezshopinindia@gmail.com</h1>
+                <h1 className="flex lg:text-2xl text-lg opacity-75">ezshopinindia@gmail.com</h1>
               </a>
             </div>
           </div>
