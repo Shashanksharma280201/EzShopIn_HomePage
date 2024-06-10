@@ -50,7 +50,7 @@ const NavBar = () => {
                                 </a>
                             </div> */}
                             <div className="block text-white rounded-md hover:bg-gray-500 bg-black">
-                                <a href="\Sign-up">
+                                <a href="#Contact">
                                     <Button>Contact us</Button>
                                 </a>
                             </div>
