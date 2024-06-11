@@ -214,7 +214,7 @@ export default function Home() {
       </section>
 
 
-      <section id="Contact" className="flex flex-col h-screen mt-10 bg-gradient-to-r from-green-100 via-yellow-100 to-orange-100 rounded-3xl font-mono w-full items-center justify-center font-ubuntu">
+      <section id="Contact" className="flex flex-col h-screen mt-10 l font-mono w-full items-center justify-center font-ubuntu">
         <h1 className="flex text-2xl md:text-4xl w-full md:w-1/2 p-4 mt-10 justify-center text-center font-semibold">Contact us to integrate our software in your stores today</h1>
         <p className="flex text-sm md:text-xl opacity-75 w-full justify-center text-center">For more details on click on the buttons below, feel free to get in touch</p>
 
