@@ -168,7 +168,7 @@ export default function Home() {
       </section>
 
       <section id="Contact" className="flex flex-col h-screen mt-10 l font-mono w-full items-center justify-center font-ubuntu">
-        <h1 className="flex text-2xl md:text-4xl w-full md:w-1/2 p-4 mt-10 justify-center text-center font-semibold">Contact us to integrate our software in your stores today</h1>
+        <h1 className="flex text-2xl md:text-4xl w-full md:w-1/2 p-4 mt-10 justify-center text-center font-semibold">Connect with us to integrate our software in your stores today</h1>
         {/* <p className="flex text-sm md:text-xl opacity-75 w-full justify-center text-center">For more details on click on the buttons below, feel free to get in touch</p> */}
 
         <div className="flex flex-col md:flex-row w-full h-full items-center justify-center gap-9 p-9">
