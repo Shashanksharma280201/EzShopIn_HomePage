@@ -16,7 +16,7 @@ export default function Home() {
         {/* top heading */}
         <div className="flex relative flex-col w-full bg-gradient-to-r from-purple-300 to-pink-100 h-screen rounded-3xl lg:rounded-b-full shadow-xl items-center justify-center">
           <div className="flex flex-col bg-transparent space-y-5 w-full md:w-3/4 items-center justify-center p-6">
-            <h1 className="flex flex-col font-semibold text-5xl md:text-6xl text-center">Join the best experience of <span className="text-gray-500"> offline shopping</span></h1>
+            <h1 className="flex flex-col font-semibold animate-shake text-5xl md:text-6xl text-center">Join the best experience of <span className="text-gray-500"> offline shopping</span></h1>
             <h1 className="flex text-2xl w-full md:w-3/4 opacity-80 md:text-4xl text-center">Connect with us to have the software integrated in your system</h1>
 
             <Button>Connect with us</Button>
@@ -92,19 +92,80 @@ export default function Home() {
       </section>
 
       <section id="About" className="flex flex-col font-medium w-full h-fit p-3">
-        <div className="flex flex-col p-2 space-y-8">
-          <div className="flex bg-green-100 border border-green-200   p-2 w-full h-[40vh] rounded-2xl shadow-lg">
-            <h1>this is the best</h1>
+        <div className="flex flex-col p-7 space-y-8">
+
+
+          <div className="flex flex-col lg:flex-row bg-green-100 items-center justify-between border-2 border-green-600 p-4 w-full h-fit lg:h-[60vh] rounded-2xl shadow-md">
+            <div className="flex flex-col items-center lg:items-start justify-center w-full lg:w-1/2 h-full p-4 space-y-6">
+              <h1 className="flex lg:text-4xl text-green-500 text-2xl">
+                No more waiting in a queue for billing
+              </h1>
+              <h2 className="flex lg:text-xl w-3/4 text-sm opacity-65">
+                You can quickly bill your own items using our platform, saving you a lot of time.
+                It's an easy and efficient way to handle your purchases.
+              </h2>
+              <Button className="flex bg-green-400">Know More</Button>
+            </div>
+            <div className="flex w-3/4 lg:w-1/2 h-3/4 items-center justify-center">
+              <img src="images/queue.png" className="flex h-full" alt="queue" />
+            </div>
           </div>
-          <div className="flex bg-green-200 border-1 border-spacing-1 border-green-200   p-2 w-full h-[40vh] rounded-2xl shadow-lg">
-            <h1>this is the best</h1>
+
+          <div className="flex flex-col lg:flex-row-reverse bg-blue-100 items-center justify-between border-2 border-blue-600 p-4 w-full h-fit lg:h-[60vh] rounded-2xl shadow-md">
+            <div className="flex flex-col items-center lg:items-start justify-center w-full lg:w-1/2 h-full p-4 space-y-6">
+              <h1 className="flex lg:text-4xl text-blue-500 text-2xl">
+                Choose Your Bill: Paper or Digital, It's Your Call!
+              </h1>
+              <h2 className="flex lg:text-xl w-3/4 text-sm opacity-65">
+                You can track your bills on the app or request a paper bill.
+                Easily manage your expenses your way, whether online or offline.
+              </h2>
+              <Button className="flex bg-blue-400">Know More</Button>
+            </div>
+            <div className="flex w-full lg:w-1/2 h-full items-center justify-center">
+              <img src="images/receipt.gif" className="flex h-full bg-transparent" alt="queue" />
+              {/* <video className="video" src="images/receipt.mp4" autoPlay loop muted /> */}
+            </div>
           </div>
-          <div className="flex bg-green-200 border-1 border-spacing-1 border-green-200   p-2 w-full h-[40vh] rounded-2xl shadow-lg">
-            <h1>this is the best</h1>
+
+
+          <div className="flex flex-col lg:flex-row bg-purple-100 items-center justify-between border-2 border-purple-600 p-4 w-full h-fit lg:h-[60vh] rounded-2xl shadow-md">
+            <div className="flex flex-col items-center lg:items-start justify-center w-full lg:w-1/2 h-full p-4 space-y-6">
+              <h1 className="flex lg:text-4xl text-purple-500 text-2xl">
+                Scan the barcode to add to cart
+              </h1>
+              <h2 className="flex lg:text-xl w-full lg:w-3/4 text-sm opacity-65">
+                Track your purchases by scanning barcodes and pay online for a quick checkout.
+                Simply scan items as you shop and complete your payment digitally when you're done.
+              </h2>
+              <Button className="flex bg-purple-400">Know More</Button>
+            </div>
+            <div className="flex w-full lg:w-1/2 h-3/4 items-center justify-center">
+              <img src="images/barcode.gif" className="flex h-full" alt="queue" />
+            </div>
           </div>
-          <div className="flex bg-green-200 border-1 border-spacing-1 border-green-200   p-2 w-full h-[40vh] rounded-2xl shadow-lg">
-            <h1>this is the best</h1>
+
+
+          <div className="flex flex-col lg:flex-row-reverse bg-orange-100 items-center justify-between border-2 border-orange-600 p-4 w-full h-fit lg:h-[60vh] rounded-2xl shadow-md">
+            <div className="flex flex-col items-center lg:items-start justify-center w-full lg:w-1/2 h-full p-4 space-y-6">
+              <h1 className="flex lg:text-4xl text-orange-500 text-2xl">
+                Easy Inventory Management
+              </h1>
+              <h2 className="flex lg:text-xl w-full lg:w-3/4 text-sm opacity-65">
+                Effortlessly manage your stock with our user-friendly inventory system. Save time,
+                reduce errors, and keep track of your inventory with ease.
+              </h2>
+              <Button className="flex bg-orange-400">Know More</Button>
+            </div>
+            <div className="flex w-full lg:w-1/2 h-3/4 items-center justify-center">
+              <img src="images/warehouse.png" className="flex h-full" alt="queue" />
+            </div>
           </div>
+
+
+
+
+
         </div>
       </section>
 
