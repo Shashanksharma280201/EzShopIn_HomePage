@@ -85,8 +85,6 @@ export default function Home() {
 
       </section>
 
-
-
       <section className="flex w-full font-mono h-fit items-center justify-center md:-mt-10">
         <ScrollAnimation />
       </section>
@@ -173,7 +171,7 @@ export default function Home() {
         <h1 className="flex text-2xl md:text-4xl w-full md:w-1/2 p-4 mt-10 justify-center text-center font-semibold">Contact us to integrate our software in your stores today</h1>
         <p className="flex text-sm md:text-xl opacity-75 w-full justify-center text-center">For more details on click on the buttons below, feel free to get in touch</p>
 
-        <div className="flex flex-col md:flex-row w-full h-full items-center justify-center gap-5 p-4 pl-9 pr-9">
+        <div className="flex flex-col md:flex-row w-full h-full items-center justify-center gap-9 p-9">
           {/* contact  */}
           <div className="flex flex-col space-y-7 w-full pb-2 h-fit bg-gradient-to-tl from-yellow-100 to-green-100 rounded-2xl shadow-xl items-center justify-center">
             <h1 className="flex text-3xl">Contact us</h1>
@@ -197,7 +195,6 @@ export default function Home() {
 
         </div>
       </section>
-
 
       <Footer />
     </>
