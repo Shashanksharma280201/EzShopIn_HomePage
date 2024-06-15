@@ -20,7 +20,7 @@ export default function Home() {
             <h1 className="flex text-2xl w-full md:w-3/4 opacity-60 md:text-3xl text-center">Connect with us to have the software integrated in your system</h1>
 
             <Button>Connect with us</Button>
-            <h1 className="flex text-sm md:text-xl opacity-70 text-center">Our team would connect with you as soon as possible</h1>
+            {/* <h1 className="flex text-sm md:text-xl opacity-70 text-center">Our team would connect with you as soon as possible</h1> */}
           </div>
         </div>
 
@@ -35,8 +35,8 @@ export default function Home() {
               </CardHeader>
               <CardContent className="flex flex-col justify-center items-center">
                 <p className="flex text-sm md:text-lg opacity-75">
-                  Experience the convenience of seamless self-check-in and check-out with our state-of-the-art system,
-                  with less clicks you can enjoy your shopping.
+                  Enjoy the ease of our advanced self-check-in and check-out system. With fewer clicks,
+                  you can make your shopping experience quicker and more convenient.
                 </p>
 
               </CardContent>
@@ -48,12 +48,12 @@ export default function Home() {
 
             <Card className="flex flex-col z-10 lg:mt-10 bg-gradient-to-tl from-yellow-100 to-green-100 shadow-lg z-1 hover:shadow-xl rounded-2xl transition-shadow w-full lg:w-1/3 h-fit">
               <CardHeader>
-                <CardTitle>Invenrtory Management</CardTitle>
+                <CardTitle>Inventory Management</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="flex text-sm md:text-lg opacity-75">
-                  Streamline your operations with our cutting-edge inventory management system,
-                  designed to optimize stock control, reduce costs, and boost efficiency.
+                  Improve your operations with our advanced inventory management system.
+                  It helps you manage stock better, cut costs, and work more efficiently.
                 </p>
 
               </CardContent>
@@ -69,8 +69,8 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="flex text-sm md:text-lg opacity-75">
-                  Effortlessly streamline your operations with our advanced barcode reading system,
-                  ensuring fast and accurate data capture for optimal efficiency.
+                  Easily improve your operations with our advanced barcode reader,
+                  making data capture fast and accurate for better efficiency.
                 </p>
 
               </CardContent>
@@ -169,7 +169,7 @@ export default function Home() {
 
       <section id="Contact" className="flex flex-col h-screen mt-10 l font-mono w-full items-center justify-center font-ubuntu">
         <h1 className="flex text-2xl md:text-4xl w-full md:w-1/2 p-4 mt-10 justify-center text-center font-semibold">Contact us to integrate our software in your stores today</h1>
-        <p className="flex text-sm md:text-xl opacity-75 w-full justify-center text-center">For more details on click on the buttons below, feel free to get in touch</p>
+        {/* <p className="flex text-sm md:text-xl opacity-75 w-full justify-center text-center">For more details on click on the buttons below, feel free to get in touch</p> */}
 
         <div className="flex flex-col md:flex-row w-full h-full items-center justify-center gap-9 p-9">
           {/* contact  */}
