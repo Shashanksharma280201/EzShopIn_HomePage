@@ -49,7 +49,7 @@ const NavBar = () => {
                     </nav> */}
                     <div className="block text-white rounded-md hover:bg-gray-500 bg-black">
                         <a href="#Contact">
-                            <button className='flex rounded-4xl p-2'>Contact us</button>
+                            <button className='flex rounded-4xl text-sm md:text-lg p-2'>Contact us</button>
                         </a>
                     </div>
                 </header>

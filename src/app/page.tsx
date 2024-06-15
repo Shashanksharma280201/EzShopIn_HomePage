@@ -11,13 +11,13 @@ export default function Home() {
     <>
       <NavBar />
 
-      <section id="Home" className="flex font-mono flex-col  h-fit  w-full">
+      <section id="Home" className="flex flex-col h-fit w-full">
 
         {/* top heading */}
         <div className="flex relative flex-col w-full bg-gradient-to-r from-purple-300 to-pink-100 h-screen rounded-3xl lg:rounded-b-full shadow-xl items-center justify-center">
           <div className="flex flex-col bg-transparent space-y-5 w-full md:w-3/4 items-center justify-center p-6">
-            <h1 className="flex flex-col font-semibold animate-shake text-5xl md:text-6xl text-center">Join the best experience of <span className="text-gray-500"> offline shopping</span></h1>
-            <h1 className="flex text-2xl w-full md:w-3/4 opacity-80 md:text-4xl text-center">Connect with us to have the software integrated in your system</h1>
+            <h1 className="flex flex-col font-semibold animate-shake text-4xl md:text-6xl text-center">Join the best experience of <span className="text-gray-500"> offline shopping</span></h1>
+            <h1 className="flex text-2xl w-full md:w-3/4 opacity-60 md:text-3xl text-center">Connect with us to have the software integrated in your system</h1>
 
             <Button>Connect with us</Button>
             <h1 className="flex text-sm md:text-xl opacity-70 text-center">Our team would connect with you as soon as possible</h1>
@@ -40,10 +40,10 @@ export default function Home() {
                 </p>
 
               </CardContent>
-
+              {/* 
               <CardFooter>
                 <Button><a href="#check-in/out">Read more</a></Button>
-              </CardFooter>
+              </CardFooter> */}
             </Card>
 
             <Card className="flex flex-col z-10 lg:mt-10 bg-gradient-to-tl from-yellow-100 to-green-100 shadow-lg z-1 hover:shadow-xl rounded-2xl transition-shadow w-full lg:w-1/3 h-fit">
@@ -58,9 +58,9 @@ export default function Home() {
 
               </CardContent>
 
-              <CardFooter>
+              {/* <CardFooter>
                 <Button>Read more</Button>
-              </CardFooter>
+              </CardFooter> */}
             </Card>
 
             <Card className="flex flex-col z-10 lg:-mt-[100px] bg-gradient-to-tl from-yellow-100 to-green-100 shadow-lg z-1 hover:shadow-xl rounded-2xl transition-shadow w-full lg:w-1/3 h-fit">
@@ -75,9 +75,9 @@ export default function Home() {
 
               </CardContent>
 
-              <CardFooter>
+              {/* <CardFooter>
                 <Button>Read more</Button>
-              </CardFooter>
+              </CardFooter> */}
             </Card>
 
           </div>
