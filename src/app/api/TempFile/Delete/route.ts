@@ -3,8 +3,7 @@ import { MongoClient } from "mongodb";
 import { NextResponse } from "next/server";
 
 // MongoDB connection URL
-const url: string = "mongodb+srv://TempFile:TempFile_ezshopin@cluster0.yb44ya6.mongodb.net/";
-
+const url = process.env.MONGODB_URI || "";
 let client: MongoClient | null = null;
 
 // Helper function to initialize and reuse MongoClient
