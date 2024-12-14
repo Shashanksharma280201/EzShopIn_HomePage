@@ -17,7 +17,7 @@ export default function Page() {
 
             <a href="/Customer/offline_shopping" className="flex flex-col justify-between w-full h-full bg-gradient-to-br from-blue-100 via-blue-200 to-blue-300 p-6 rounded-3xl shadow-xl transition-shadow delay-100 hover:shadow-2xl">
               <div className="flex flex-row w-full">
-                <h1 className="flex w-3/4 text-xl lg:text-4xl opacity-70">
+                <h1 className="flex w-3/4 text-lg lg:text-2xl opacity-70">
                   Start with offline shopping
                 </h1>
                 <div className="flex bg-white rounded-full p-4 w-1/4 h-fit">
@@ -30,7 +30,7 @@ export default function Page() {
 
             <a href="/Customer/check_Inventory" className="flex flex-col justify-between w-full h-full bg-gradient-to-br from-green-100 via-green-200 to-green-300 p-6 rounded-3xl shadow-xl transition-shadow delay-100 hover:shadow-2xl">
               <div className="flex flex-row w-full">
-                <h1 className="flex w-3/4 text-xl lg:text-4xl opacity-70">
+                <h1 className="flex w-3/4 text-lg lg:text-2xl opacity-70">
                   Check the inventory of your favourite stores
                 </h1>
                 <div className="flex bg-white rounded-full p-4 w-1/4 h-fit">
@@ -58,9 +58,9 @@ export default function Page() {
 
           </div>
 
-          <a href="/Sign-up/NewStoreRegister" className="flex flex-col justify-between h-1/4 lg:h-1/2 w-full bg-gradient-to-br from-purple-100 via-purple-200 to-purple-300 p-6 rounded-3xl shadow-xl transition-shadow delay-100 hover:shadow-2xl">
+          <a href="/Sign-up/Login" className="flex flex-col justify-between h-1/4 lg:h-1/2 w-full bg-gradient-to-br from-purple-100 via-purple-200 to-purple-300 p-6 rounded-3xl shadow-xl transition-shadow delay-100 hover:shadow-2xl">
             <div className="flex flex-row w-full">
-              <h1 className="flex w-3/4 text-xl lg:text-4xl opacity-70">
+              <h1 className="flex w-3/4 text-lg lg:text-2xl opacity-70">
                 Register your Company / Store
               </h1>
               <div className="flex bg-white rounded-full p-4 w-1/4 h-fit">

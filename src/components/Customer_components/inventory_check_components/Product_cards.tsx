@@ -1,24 +1,31 @@
 import React, { useState, useEffect } from 'react';
+import { Products } from '@/Data/Products';
 
 // Define the interface for the product type
-interface Product {
+export interface Product {
     id: number;
     title: string;
+    description: string;
     price: number;
+    discountPercentage: number;
+    rating: number;
+    stock: number;
+    brand: string;
+    category: string;
+    thumbnail: string;
     images: string[];
-    quantity: number; // Assuming you want to display the quantity
 }
 
 const Product_cards: React.FC = () => {
     const [products, setProducts] = useState<Product[]>([]);
 
-    useEffect(() => {
-        // Fetch data from the API
-        fetch('https://api.escuelajs.co/api/v1/products')
-            .then((response) => response.json())
-            .then((data: Product[]) => setProducts(data.slice(0, 15))) // Limit to 15 items
-            .catch((error) => console.error('Error fetching data:', error));
-    }, []);
+    // useEffect(() => {
+    //     // Fetch data from the API
+    //     fetch('https://api.escuelajs.co/api/v1/products')
+    //         .then((response) => response.json())
+    //         .then((data: Product[]) => setProducts(data.slice(0, 15))) // Limit to 15 items
+    //         .catch((error) => console.error('Error fetching data:', error));
+    // }, []);
 
     return (
         <>

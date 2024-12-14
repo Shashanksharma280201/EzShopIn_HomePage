@@ -2,14 +2,14 @@ import { MongoClient } from "mongodb";
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
-  const url = process.env.MONGODB_URI || "";
+  const url = "mongodb+srv://TempFile:TempFile_ezshopin@cluster0.yb44ya6.mongodb.net/";
   const client = new MongoClient(url);
 
   try {
     // Parse the incoming JSON body
     const body = await request.json();
 
-    // Ensure the body is an array for `insertMany`
+    // Ensure body is an array (insertMany requires an array)
     const documents = Array.isArray(body) ? body : [body];
     console.log("Documents to insert:", documents);
 
@@ -22,17 +22,12 @@ export async function POST(request: Request) {
     const result = await inventory.insertMany(documents);
 
     // Return the response
-    return NextResponse.json({ insertedCount: result.insertedCount, ok: true });
-  } catch (error: any) {
+    return NextResponse.json({ result, ok: true });
+  } catch (error) {
     console.error("Error in POST:", error);
-
-    // Return a meaningful error message
-    return NextResponse.json(
-      { error: error.message || "Error uploading data", ok: false },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: "There is an error while uploading the data", ok: false }, { status: 500 });
   } finally {
-    // Close the client connection
+    // Ensure the client connection is closed
     await client.close();
   }
 }

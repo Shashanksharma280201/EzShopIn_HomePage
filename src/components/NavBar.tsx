@@ -46,9 +46,9 @@ const NavBar = () => {
                         <hr className="mt-4 w-full lg:hidden" />
                         <div className="my-4 flex items-center space-x-6 space-y-2 lg:my-0 lg:ml-auto lg:space-x-8 lg:space-y-0">
                             <div className="flex flex-row gap-2 justify-center items-center text-white">
-                                <Link href="\Sign-in">
+                                {/* <Link href="\Sign-in">
                                     <p className='flex items-center justify-center w-[4rem] text-black hover:text-purple-400'>Sign-in</p>
-                                </Link>
+                                </Link> */}
                                 <Link href="\Sign-up">
                                     <Button>Sign-up</Button>
                                 </Link>

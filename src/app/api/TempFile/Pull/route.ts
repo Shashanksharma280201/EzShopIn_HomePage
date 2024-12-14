@@ -3,20 +3,19 @@ import { MongoClient } from "mongodb";
 import { NextResponse } from "next/server";
 
 // MongoDB connection URL (validate at runtime for safety)
-const MONGODB_URI = process.env.MONGODB_URI || "";
-if (!MONGODB_URI) {
-    throw new Error("MongoDB connection URL is not defined in environment variables");
-}
+// if (!process.env.MONGODB_URI) {
+//     throw new Error("MongoDB connection URL is not defined in environment variables");
+// }
+const url: string = "mongodb+srv://TempFile:TempFile_ezshopin@cluster0.yb44ya6.mongodb.net/";
 
 let client: MongoClient | null = null;
 
 // Helper function to initialize and reuse MongoClient
 async function getClient() {
     if (!client) {
-        client = new MongoClient(MONGODB_URI); // Pass the URI directly
-        console.log("Connecting to MongoDB...");
+        client = new MongoClient(url);
+        console.log(client)
         await client.connect();
-        console.log("MongoDB connected!");
     }
     return client;
 }
@@ -27,7 +26,7 @@ export async function GET() {
         const database = client.db("TempFile");
         const inventory = database.collection("inventory");
 
-        const query = {};
+        const query = { }
         const items = await inventory.find(query).toArray();
         return NextResponse.json({ items, ok: true });
     } catch (error: any) {
@@ -41,6 +40,5 @@ process.on("SIGINT", async () => {
     if (client) {
         await client.close();
         client = null;
-        console.log("MongoDB connection closed!");
     }
 });

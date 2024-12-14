@@ -1,9 +1,10 @@
 // Import necessary modules
-import { MongoClient } from "mongodb";
+import { MongoClient, ObjectId } from "mongodb";
 import { NextResponse } from "next/server";
 
 // MongoDB connection URL
-const url = process.env.MONGODB_URI || "";
+const url: string = "mongodb+srv://TempFile:TempFile_ezshopin@cluster0.yb44ya6.mongodb.net/";
+
 let client: MongoClient | null = null;
 
 // Helper function to initialize and reuse MongoClient
@@ -29,19 +30,19 @@ export async function DELETE(req: Request) {
 
         // Parse the request body
         const body = await req.json();
-        const { id } = body;
+        const { itemId } = body;
 
-        if (!id) {
-            return NextResponse.json({ error: "Name is required" }, { status: 400 });
+        if (!itemId) {
+            return NextResponse.json({ error: "itemId is required" }, { status: 400 });
         }
 
         // Delete the document from the database
-        const result = await inventory.deleteOne({ id });
+        const result = await inventory.deleteOne({ _id: new ObjectId(itemId) });
 
         if (result.deletedCount > 0) {
-            return NextResponse.json({ message: `Item "${id}" deleted successfully`, ok: true });
+            return NextResponse.json({ message: `Item "${itemId}" deleted successfully`, ok: true });
         } else {
-            return NextResponse.json({ error: `Item "${id}" not found`, ok: false }, { status: 404 });
+            return NextResponse.json({ error: `Item "${itemId}" not found`, ok: false }, { status: 404 });
         }
     } catch (error: any) {
         console.error("Error deleting item:", error);
@@ -50,7 +51,7 @@ export async function DELETE(req: Request) {
 }
 
 // Optional cleanup if the app shuts down
-process.on("SIGINT", async () => {
+const cleanup = async () => {
     if (client) {
         try {
             await client.close();
@@ -61,4 +62,7 @@ process.on("SIGINT", async () => {
             client = null;
         }
     }
-});
+};
+
+process.on("SIGINT", cleanup);
+process.on("SIGTERM", cleanup);
