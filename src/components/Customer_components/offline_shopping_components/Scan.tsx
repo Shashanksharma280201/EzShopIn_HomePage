@@ -13,7 +13,7 @@ const BarcodeScanner: React.FC = () => {
     const startScanning = async () => {
       try {
         const stream = await navigator.mediaDevices.getUserMedia({
-          video: {
+          video: { 
             facingMode: 'environment', // Use the rear camera
           },
         });
