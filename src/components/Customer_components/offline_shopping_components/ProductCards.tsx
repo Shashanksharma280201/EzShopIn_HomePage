@@ -48,7 +48,7 @@ const ProductCards: React.FC = () => {
     return (
         <>
 
-            <Input placeholder="Search" className="bg-gray-200 text-white rounded-lg p-2 w-full mx-4 md:w-1/2" />
+            <Input placeholder="Search" className="bg-gray-200 text-black rounded-lg p-2 w-full mx-4 md:w-1/2" />
             <div className="flex flex-wrap items-center justify-center gap-4 p-4">
 
                 {products.map((product) => (

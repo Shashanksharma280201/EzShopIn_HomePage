@@ -12,7 +12,7 @@ export function ScrollAnimation() {
                     <>
                         <h1 className=" text-4xl md:text-7xl font-semibold text-black">
                             Easy to use <br />
-                            <span className="text-5xl md:text-[6rem] text-gray-600 font-bold mt-1 leading-none">
+                            <span className="text-5xl md:text-[6rem] text-[#5E4B9E] font-bold mt-1 leading-none">
                                 Platform
                             </span>
                         </h1>

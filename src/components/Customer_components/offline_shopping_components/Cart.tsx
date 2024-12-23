@@ -35,13 +35,21 @@ const Cart = () => {
 
   const decrementQuantity = (productId: number) => {
     setCartItems((items) =>
-      items.map((item) =>
-        item.product.id === productId
-          ? { ...item, quantity: Math.max(1, item.quantity - 1) }
-          : item
-      )
+      items.reduce((updatedItems, item) => {
+        if (item.product.id === productId) {
+          const newQuantity = item.quantity - 1;
+          if (newQuantity > 0) {
+            return [...updatedItems, { ...item, quantity: newQuantity }];
+          } else {
+            return updatedItems;
+          }
+        } else {
+          return [...updatedItems, item];
+        }
+      }, [] as typeof items)
     );
   };
+  
 
   const removeItem = (productId: number) => {
     setCartItems((items) =>

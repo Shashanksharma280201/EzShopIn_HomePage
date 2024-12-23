@@ -30,7 +30,7 @@ export default function Home() {
       {/* Hero Section   */}
       <section id="Home" className="flex flex-col h-fit w-full font-sans">
 
-        <div className="flex relative h-screen w-full flex-col bg-gradient-to-b from-gray-700/65 rounded-b-2xl md:-mt-[5rem] items-center justify-center overflow-hidden">
+        <div className="flex relative h-screen w-full flex-col bg-gradient-to-br from-[#97c6ef32] via-[#cba4d846] to-[#85dce726] rounded-b-2xl items-center justify-center overflow-hidden">
           <h2 className="z-10 whitespace-pre-wrap text-center text-4xl lg:text-7xl w-1/2 font-normal tracking-tighter items-center justify-center  text-gray-800">
             Shop faster Checkout smarter Offline made easy
           </h2>
@@ -41,7 +41,7 @@ export default function Home() {
         <div className="flex relative flex-col w-full h-3/4 items-center justify-center lg:-top-[28vh] p-6">
           {/* <h1 className="flex font-semibold text-4xl"> what we offer</h1> */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 w-full h-fit p-9">
-            <Card className="flex flex-col lg:-mt-[170px] bg-gradient-to-tr from-gray-100 via-gray-300 to-gray-400 shadow-lg z-1 border-none hover:shadow-xl rounded-2xl transition-shadow w-full lg:w-1/3 h-fit">
+            <Card className="flex flex-col lg:-mt-[170px] bg-[#cc9fdbbd] shadow-lg z-1 border-none hover:shadow-xl rounded-2xl transition-shadow w-full lg:w-1/3 h-fit">
               <CardHeader>
                 <CardTitle>Self Check-in Check-out</CardTitle>
               </CardHeader>
@@ -89,7 +89,7 @@ export default function Home() {
 
       {/* About  */}
       <section id="About" className="flex flex-col w-full p-4 md:p-8 gap-9 font-sans h-fit items-center justify-center md:-mt-[10rem]">
-        <div className="flex flex-col justify-center items-center bg-gradient-to-b from-[#F9F9F9] via-gray-300/65 to-gray-600/65 rounded-2xl w-full">
+        <div className="flex flex-col justify-center items-center bg-gradient-to-br from-[#97c6ef32] via-[#cba4d846] to-[#85dce726] rounded-2xl w-full">
           {/* #1 */}
           <div className="flex flex-col w-full rounded-xl items-center justify-center">
             <div className="flex flex-col items-center justify-center lg:flex-row w-full p-4 gap-9 mt-8">

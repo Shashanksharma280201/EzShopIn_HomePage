@@ -133,8 +133,17 @@ const BarcodeScanner: React.FC = () => {
 
         <h1 className="text-xl p-3 text-center md:text-2xl lg:text-4xl font-bold text-gray-600 mb-6">Scan the Barcode of the product you want to add to your cart</h1>
         <div className="w-full max-w-md bg-white shadow-md rounded-lg p-4">
-          <div className="relative w-full h-64 bg-black rounded-lg mb-4">
+          <div className="relative flex flex-col items-center justify-center w-full h-64 bg-black rounded-lg mb-4">
+            {/* Video feed */}
             <video ref={videoRef} className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+
+            {/* Center line for scanning */}
+            <div
+              className="absolute inset-0 flex justify-center items-center pointer-events-none"
+              style={{ zIndex: 1 }}
+            >
+              <div className="w-full h-0.5 bg-red-500 opacity-55" style={{ opacity: 0.7 }} />
+            </div>
           </div>
 
           <div className="mt-4">
@@ -146,6 +155,7 @@ const BarcodeScanner: React.FC = () => {
             )}
           </div>
         </div>
+
 
         {/* <div className="flex mt-6 space-x-4">
         <Button onClick={() => setIsActive(true)} disabled={isActive}>

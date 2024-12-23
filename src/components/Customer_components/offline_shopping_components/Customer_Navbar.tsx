@@ -5,10 +5,7 @@ import React from 'react'
 import Inventory from './Inventory'
 import Cart from './Cart'
 import { useRef, useEffect, useState } from 'react';
-import { useUser } from "@clerk/nextjs";
 import Link from 'next/link'
-import Lottie from 'react-lottie-player';
-import animationData from '../../../../public/images/data/loading.json';
 import Scan from './Scan'
 import { cartItemQuantityAtom } from '@/lib/atoms';
 import { useAtomValue } from 'jotai';
@@ -38,23 +35,6 @@ const Customer_Navbar = () => {
                 });
         }
     }, []);
-
-    const { user } = useUser();
-
-    // if (!user) {
-    //     return [
-    //         <div className="flex h-screen w-full items-center justify-center flex-col gap-5">
-    //             <Lottie
-    //                 loop
-    //                 animationData={animationData}
-    //                 play
-    //                 className='flex w-1/5 h-1/5'
-    //             />
-    //             {/* <Button><Link href="/">Main Page</Link></Button> */}
-    //         </div>
-    //     ]
-    // }
-
 
     return (
         <>
