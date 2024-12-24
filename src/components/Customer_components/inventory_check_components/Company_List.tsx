@@ -431,7 +431,7 @@ const Company_List = () => {
           <DrawerTrigger>
             <a href='#' className="flex flex-col items-center w-[8rem] md:w-[15rem] h-full p-4 shadow-lg rounded-2xl bg-orange-400 hover:shadow-2xl delay-100 transition-all">
               <img src="/images/home.svg" alt="company logo" style={{ width: "100%", height: "100%" }} />
-              <h1 className="flex lg:text-2xl text-xl">Zara</h1>
+              <h1 className="flex lg:text-2xl text-xl">Powerlook</h1>
             </a>
           </DrawerTrigger>
 

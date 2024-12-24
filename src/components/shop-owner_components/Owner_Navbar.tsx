@@ -27,7 +27,7 @@ const Owner_Navbar = () => {
                                 <li className="flex-auto text-center">
                                     <a
                                         className={
-                                            "px-5 py-3 shadow-lg rounded-2xl block h-[4rem] leading-normal justify-center items-center" +
+                                            "px-5 py-3 shadow-lg rounded-2xl block h-[3rem] md:h-[4rem] leading-normal justify-center items-center" +
                                             (openTab === 1
                                                 ? "text-black bg-gray-300"
                                                 : "text-black bg-white")
@@ -47,7 +47,7 @@ const Owner_Navbar = () => {
                                 <li className="flex-auto text-center">
                                     <a
                                         className={
-                                            "px-5 py-3 shadow-lg rounded-2xl block h-[4rem] leading-normal justify-center items-center" +
+                                            "px-5 py-3 shadow-lg rounded-2xl block h-[3rem] md:h-[4rem] leading-normal justify-center items-center" +
                                             (openTab === 2
                                                 ? "text-black bg-gray-300"
                                                 : "text-black bg-white")
@@ -66,7 +66,7 @@ const Owner_Navbar = () => {
                                 <li className="flex-auto text-center">
                                     <a
                                         className={
-                                            "px-5 py-3 shadow-lg rounded-2xl block h-[4rem] leading-normal justify-center items-center" +
+                                            "px-5 py-3 shadow-lg rounded-2xl block h-[3rem] md:h-[4rem] leading-normal justify-center items-center" +
                                             (openTab === 3
                                                 ? "text-black bg-gray-300"
                                                 : "text-black bg-white")

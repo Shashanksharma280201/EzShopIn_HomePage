@@ -6,7 +6,7 @@ export default function Page() {
     <>
       <nav className="flex items-center justify-between p-4 fixed w-full top-0 z-10">
         <a href="/" className="text-blue-500 hover:text-blue-700 transition">
-          <Button className="px-4 py-2 text-white rounded-lg shadow hover:bg-blue-600">
+          <Button>
             Back
           </Button>
         </a>
@@ -63,7 +63,7 @@ export default function Page() {
 
           {/* Card 3 */}
           <a
-            href="/Customer/register_company"
+            href="/Sign-up/Login"
             className="flex flex-col items-start justify-between p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-200"
           >
             <h1 className="text-xl font-semibold text-gray-700">

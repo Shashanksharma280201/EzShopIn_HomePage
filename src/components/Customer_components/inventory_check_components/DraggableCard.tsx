@@ -74,8 +74,8 @@ const DraggableCard: React.FC = () => {
     };
 
     return (
-        <section className="flex flex-col-reverse md:flex-row w-full h-screen items-center justify-center gap-9 p-9">
-            <div className="flex flex-col gap-6 justify-center items-center h-3/4 bg-gray-700 bg-gradient-to-br from-slate-500 to-green-300 rounded-3xl p-4 w-full lg:w-1/2">
+        <section className="flex flex-col-reverse md:flex-row w-full h-screen items-center justify-center -mt-9">
+            <div className="flex flex-col gap-6 justify-center items-center h-3/4 rounded-3xl p-4 w-full lg:w-1/2">
                 <h1 className="flex text-3xl">Swipe right or left</h1>
                 {showAlert && (
                     <div className="bg-red-100 border border-red-400 fixed text-red-700 px-4 py-3 rounded z-10 lg:bottom-0 right-0 m-3" role="alert">
@@ -100,7 +100,7 @@ const DraggableCard: React.FC = () => {
                             src={cardData[currentIndex].image}
                             alt={cardData[currentIndex].title}
                             layout="fill"
-                            objectFit="cover"
+                            objectFit="contain"
                             style={{ width: "100%", height: "100%" }}
                         />
                     </div>
@@ -109,18 +109,19 @@ const DraggableCard: React.FC = () => {
                             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">{cardData[currentIndex].title}</h2>
                             <p className="text-lg md:text-xl text-gray-600">{cardData[currentIndex].description}</p>
                         </div>
-                        <div className="text-sm md:text-base text-gray-500">
+                        {/* <div className="text-sm md:text-base text-gray-500">
                             Card {currentIndex + 1} of {cardData.length}
-                        </div>
+                        </div> */}
                     </div>
                 </motion.div>
             </div>
 
-            <div className="flex bg-green-400 w-full rounded-3xl shadow-2xl lg:w-1/4 h-1/2 p-8">
+            {/* <div className="flex bg-green-400 w-full rounded-3xl shadow-2xl lg:w-1/4 h-1/2 p-8">
                 <h1 className="flex">the above cards have the item name and cost, but this would have the other details of the 
                     item that is which brand, location of the nearest store(name) and other details
+                    This also 
                 </h1>
-            </div>
+            </div> */}
         </section>
     );
 };
