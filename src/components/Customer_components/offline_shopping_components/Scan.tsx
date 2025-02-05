@@ -92,7 +92,7 @@ const BarcodeScanner: React.FC = () => {
     <>
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
         <div className="flex fixed top-0 flex-row justify-between bg-gray-700/85 w-full p-5">
-          <h1 className="flex text-3xl opacity-85">Zerocue</h1>
+          <h1 className="flex text-3xl opacity-85">EzShopIn</h1>
           <div className="flex gap-4 px-4 md:px-9">
             <DropdownMenu>
               <DropdownMenuTrigger className="flex bg-white opacity-50 p-2 rounded-full"><img src="/images/user.svg" alt="user" className="h-5 md:h-8 w-5 md:w-8" /></DropdownMenuTrigger>

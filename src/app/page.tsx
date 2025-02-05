@@ -9,10 +9,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Team } from "@/components/main_page_components/Team";
 import Ripple from "@/components/magicui/ripple";
 import { Animated_Beam } from "@/components/main_page_components/Animated_Beam";
-import { Animated_List } from "@/components/main_page_components/Animated_List";
 import {
   Accordion,
   AccordionContent,
@@ -97,10 +95,10 @@ export default function Home() {
                 <Animated_Beam />
               </div>
               <div className="flex flex-col w-full lg:w-1/2 text-center items-start justify-center text-md opacity-75">
-                <h1 className="flex text-black text-3xl md:text-5xl">Self Check-In and Check-Out</h1>
+                <h1 className="flex text-black text-3xl md:text-5xl">Self Check-In and Check-Out System</h1>
                 <br />
                 <p className="flex flex-col gap-2 items-center text-gray-600/65 text-lg lg:text-2xl">
-                  <span className="flex text-gray-700/95 text-xl md:text-3xl">Skip the lines!</span>
+                  <span className="flex text-gray-700/95 text-lg lg:text-2xl">Skip the lines!</span>
                   With our self check-in and check-out system,
                   you can complete your transactions seamlessly using just your phone.
                   Simply scan, pay, and go.
@@ -148,7 +146,7 @@ export default function Home() {
               <Animated_Beam />
             </div>
             <div className="flex flex-col w-full lg:w-1/2 text-center items-center justify-center text-md opacity-75 gap-5">
-            <h1 className="flex text-black text-3xl md:text-5xl">Customer Store Inventory Preview</h1>
+              <h1 className="flex text-black text-3xl md:text-5xl">Customer Store Inventory Preview</h1>
               <p className="flex flex-col gap-2 items-center text-gray-600/85 text-lg lg:text-2xl">
                 <span className="flex text-gray-700/95 text-xl md:text-3xl">Check Before You Shop</span>
                 See what’s available before visiting any store!
@@ -158,6 +156,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
 
       {/* FAQ  */}
       <section className="flex flex-col w-full items-center justify-center p-3">
@@ -254,9 +253,9 @@ export default function Home() {
                   +91 9591678076
                 </h1>
               </a>
-              <a href="mailto:Zerocueindia@gmail.com">
+              <a href="mailto:EzShopInindia@gmail.com">
                 <h1 className="flex lg:text-2xl text-lg opacity-75">
-                  Zerocue.india@gmail.com
+                  EzShopIn.india@gmail.com
                 </h1>
               </a>
             </div>

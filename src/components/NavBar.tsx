@@ -25,10 +25,13 @@ const NavBar = () => {
 
     return (
         <>
-            <nav className={`fixed w-full py-2 rounded-b-3xl z-20 transition-all duration-300 ${isScrolled ? 'shadow-md backdrop-blur-3xl' : ''}`}>
+            <nav className={`fixed ${isScrolled
+                    ? 'w-3/4 rounded-2xl shadow-md backdrop-blur-3xl'
+                    : 'w-full rounded-b-3xl'
+                } py-2 z-20 transition-all duration-700 top-3 left-1/2 -translate-x-1/2`}>
                 <header className="text-black container items-center justify-between font-sans relative mx-auto flex flex-col overflow-hidden px-4 py-4 lg:flex-row lg:items-center">
                     <Link href="#" className="flex items-center whitespace-nowrap md:text-3xl text-xl">
-                        Zerocue
+                        EzShopIn
                     </Link>
                     <input type="checkbox" className="peer hidden" id="navbar-open" />
                     <label className="absolute top-5 right-5 cursor-pointer lg:hidden" htmlFor="navbar-open">
@@ -49,7 +52,7 @@ const NavBar = () => {
                                 {/* <Link href="\Sign-in">
                                     <p className='flex items-center justify-center w-[4rem] text-black hover:text-purple-400'>Sign-in</p>
                                 </Link> */}
-                                <Link href="\Sign-up">
+                                <Link href="#">
                                     <Button>Sign-up</Button>
                                 </Link>
                             </div>

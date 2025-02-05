@@ -48,7 +48,7 @@ const Dashboard = () => {
         <>
             <div className="flex flex-col font-sans">
                 <div className="flex md:flex-row flex-col items-center justify-between">
-                    <h2 className="text-2xl font-bold tracking-tight">Zerocue</h2>
+                    <h2 className="text-2xl font-bold tracking-tight">EzShopIn</h2>
                     <div className="flex flex-row justify-center items-center space-x-2">
                         <Select>
                             <SelectTrigger className="w-[180px]">
@@ -74,7 +74,7 @@ const Dashboard = () => {
                                 <AlertDialogHeader>
                                     <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
                                     <AlertDialogDescription>
-                                        You will be redirected to the main page of Zerocue.
+                                        You will be redirected to the main page of EzShopIn.
                                         You will have to login to come back to this page
                                     </AlertDialogDescription>
                                 </AlertDialogHeader>

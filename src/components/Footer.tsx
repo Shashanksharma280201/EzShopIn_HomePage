@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="py-16 md:py-24 lg:py-32 mx-auto w-full max-w-7xl px-5 md:px-10">
                     <div className="flex-row flex justify-between max-[767px]:flex-col max-[767px]:items-start">
                         <div className="w-full max-w-[560px] max-[991px]:mr-4 max-[991px]:flex-initial max-[767px]:">
-                            <h2 className="font-bold text-3xl md:text-5xl">Zerocue</h2>
+                            <h2 className="font-bold text-3xl md:text-5xl">EzShopIn</h2>
                             <h2 className="flex text-xl opacity-55">A new way of shopping</h2>
                         </div>
                         <div className="max-[991px]:ml-4 max-[991px]:flex-none max-[767px]: max-[767px]:mt-8">
@@ -36,7 +36,7 @@ const Footer = () => {
                             </div>
                             <div className="mb-4 flex max-w-[272px] items-start justify-start">
                                 <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a944119e6cf76_EnvelopeSimple-2.svg" alt="" className="inline-block mr-3" />
-                                <p className="text-[#636262] max-[479px]:text-sm">Zerocueindia@gmail.com</p>
+                                <p className="text-[#636262] max-[479px]:text-sm">EzShopInindia@gmail.com</p>
                             </div>
                         </div>
                     </div>

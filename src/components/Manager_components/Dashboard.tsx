@@ -45,7 +45,7 @@ const Dashboard = () => {
                 <AlertDialogHeader>
                   <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
                   <AlertDialogDescription>
-                    You will be redirected to the main page of Zerocue. You
+                    You will be redirected to the main page of EzShopIn. You
                     will have to login to come back to this page
                   </AlertDialogDescription>
                 </AlertDialogHeader>
