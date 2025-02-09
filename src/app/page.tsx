@@ -17,7 +17,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
+import About from "@/components/main_page_components/About";
+import { Button } from "@/components/ui/button";
+import { RecentSales } from "@/components/dashboard_components/recent-sales"
 
 
 export default function Home() {
@@ -28,18 +30,17 @@ export default function Home() {
       {/* Hero Section   */}
       <section id="Home" className="flex flex-col h-fit w-full font-sans">
 
-        <div className="flex relative h-screen w-full flex-col bg-gradient-to-b from-gray-400 via-gray-300 to-transparent rounded-b-2xl items-center justify-center overflow-hidden">
-          <h2 className="z-10 whitespace-pre-wrap text-center text-4xl lg:text-7xl w-1/2 font-normal tracking-tighter items-center justify-center  text-gray-800">
+        <div className="flex relative h-screen w-full flex-col bg-gradient-to-br from-pink-100 to-green-100 rounded-b-2xl items-center justify-center overflow-hidden">
+          <h2 className="z-10 whitespace-pre-wrap text-center text-4xl lg:text-7xl w-3/4 md:w-1/2 font-normal tracking-tighter items-center justify-center text-gray-800">
             Shop faster Checkout smarter Offline made easy
           </h2>
           <Ripple />
         </div>
 
         {/* bottom cards  */}
-        <div className="flex relative flex-col w-full h-3/4 items-center justify-center lg:-top-[28vh] p-6">
-          {/* <h1 className="flex font-semibold text-4xl"> what we offer</h1> */}
+        <div className="flex relative flex-col w-full z-10 h-3/4 items-center justify-center lg:-top-[28vh] p-6">
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 w-full h-fit p-9">
-            <Card className="flex flex-col lg:-mt-[170px] bg-gradient-to-tr from-gray-100 via-gray-300 to-gray-400  shadow-lg z-1 border-none hover:shadow-xl rounded-2xl transition-shadow w-full lg:w-1/3 h-fit">
+            <Card className="flex flex-col lg:-mt-[170px] bg-gradient-to-tr from-green-100 to-green-400/50 shadow-md z-1 border-none hover:shadow-xl rounded-2xl transition-shadow w-full lg:w-1/3 h-fit">
               <CardHeader>
                 <CardTitle>Self Check-in Check-out</CardTitle>
               </CardHeader>
@@ -50,9 +51,16 @@ export default function Home() {
                   experience quicker and more convenient.
                 </p>
               </CardContent>
+              <CardFooter>
+                <Button className="flex">
+                  <a href="/Customer/offline_shopping">
+                    Shop now
+                  </a>
+                </Button>
+              </CardFooter>
             </Card>
 
-            <Card className="flex flex-col z-10 lg:mt-10 border-none bg-gradient-to-tr from-gray-100 via-gray-300 to-gray-400 shadow-lg z-1 hover:shadow-xl rounded-2xl transition-shadow w-full lg:w-1/3 h-fit">
+            <Card className="flex flex-col z-10 lg:mt-10 border-none bg-gradient-to-tr from-green-100 to-green-400/50 shadow-md z-1 hover:shadow-xl rounded-2xl transition-shadow w-full lg:w-1/3 h-fit">
               <CardHeader>
                 <CardTitle>Inventory Management</CardTitle>
               </CardHeader>
@@ -63,9 +71,16 @@ export default function Home() {
                   more efficiently.
                 </p>
               </CardContent>
+              <CardFooter>
+                <Button className="flex">
+                  <a href="/Sign-up/Login">
+                    Register now
+                  </a>
+                </Button>
+              </CardFooter>
             </Card>
 
-            <Card className="flex flex-col z-10 lg:-mt-[100px] border-none bg-gradient-to-tr from-gray-100 via-gray-300 to-gray-400 shadow-lg z-1 hover:shadow-xl rounded-2xl transition-shadow w-full lg:w-1/3 h-fit">
+            <Card className="flex flex-col z-10 lg:-mt-[100px] border-none bg-gradient-to-tr from-green-100 to-green-400/50 shadow-md z-1 hover:shadow-xl rounded-2xl transition-shadow w-full lg:w-1/3 h-fit">
               <CardHeader>
                 <CardTitle>Inventory Check</CardTitle>
               </CardHeader>
@@ -75,6 +90,13 @@ export default function Home() {
                   see if the item you want is available.
                 </p>
               </CardContent>
+              <CardFooter>
+                <Button className="flex">
+                  <a href="/Customer/check_Inventory">
+                    Shop now
+                  </a>
+                </Button>
+              </CardFooter>
             </Card>
           </div>
         </div>
@@ -87,17 +109,17 @@ export default function Home() {
 
       {/* About  */}
       <section id="About" className="flex flex-col w-full p-2 md:p-8 gap-9 font-sans h-fit items-center justify-center md:-mt-[10rem]">
-        <div className="flex flex-col justify-center items-center  bg-gradient-to-b from-transparent via-gray-300 to-gray-400 rounded-2xl w-full">
+        <div className="flex flex-col justify-center items-center  bg-gradient-to-br from-pink-200/50 to-green-200/50 rounded-2xl w-full">
           {/* #1 */}
           <div className="flex flex-col w-full rounded-xl items-center justify-center">
             <div className="flex flex-col items-center justify-center lg:flex-row w-full p-4 gap-9 mt-8">
               <div className="flex w-full lg:w-1/2">
-                <Animated_Beam />
+                <img src="/images/landing page/self_checkout.png" alt="self check out" className="w-full h-full flex" />
               </div>
               <div className="flex flex-col w-full lg:w-1/2 text-center items-start justify-center text-md opacity-75">
-                <h1 className="flex text-black text-3xl md:text-5xl">Self Check-In and Check-Out System</h1>
+                <h1 className="flex text-black text-3xl justify-center w-full md:text-5xl">Self Check-Out System</h1>
                 <br />
-                <p className="flex flex-col gap-2 items-center text-gray-600/65 text-lg lg:text-2xl">
+                <p className="flex flex-col gap-2 items-center p-9 text-gray-600/65 text-lg lg:text-2xl">
                   <span className="flex text-gray-700/95 text-lg lg:text-2xl">Skip the lines!</span>
                   With our self check-in and check-out system,
                   you can complete your transactions seamlessly using just your phone.
@@ -110,7 +132,7 @@ export default function Home() {
           {/* #2 */}
           <div className="flex flex-col items-center justify-between lg:flex-row-reverse w-full p-4 gap-9 mt-8">
             <div className="flex w-full lg:w-1/2">
-              <Animated_Beam />
+              <img src="/images/landing page/inventory_management.png" alt="Inventory management" className="w-full h-full flex" />
             </div>
             <div className="flex flex-col w-full lg:w-1/2 text-center items-center justify-center text-md opacity-75 gap-5">
               <h1 className="flex text-black text-3xl md:text-5xl">Cloud-Based Inventory Management</h1>
@@ -126,7 +148,8 @@ export default function Home() {
           {/* #3 */}
           <div className="flex flex-col items-center justify-center lg:flex-row w-full p-4 gap-9 mt-8">
             <div className="flex w-full lg:w-1/2">
-              <Animated_Beam />
+              {/* <Animated_Beam />  */}
+              <RecentSales />
             </div>
             <div className="flex flex-col w-full lg:w-1/2 text-center items-center justify-center text-md opacity-75 gap-5">
               <h1 className="flex text-black text-3xl md:text-5xl">POS System with Real-Time Data</h1>
@@ -156,6 +179,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+
+      {/* <section className="flex">
+        <About />
+      </section> */}
 
 
       {/* FAQ  */}

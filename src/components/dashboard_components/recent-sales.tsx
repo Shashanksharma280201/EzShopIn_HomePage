@@ -14,7 +14,6 @@ let notifications = [
     name: "Payment received",
     description: "EzShopIn",
     time: "15m ago",
-
     icon: "💸",
     color: "#00C9A7",
   },
@@ -29,14 +28,14 @@ let notifications = [
     name: "New Item Added",
     description: "EzShopIn",
     time: "5m ago",
-    icon: "💬",
+    icon: "📦",
     color: "#FF3D71",
   },
   {
     name: "New event",
     description: "EzShopIn",
     time: "2m ago",
-    icon: "🗞️",
+    icon: "💬",
     color: "#1E86FF",
   },
 ];
@@ -86,17 +85,17 @@ export function RecentSales({
   className?: string;
 }) {
   return (
-      <div
-          className={cn(
-              "relative flex h-[320px] w-full flex-col overflow-hidden bg-transparent",
-              className,
-          )}
-      >
-          <AnimatedList>
-              {notifications.map((item, idx) => (
-                  <Notification {...item} key={idx} />
-              ))}
-          </AnimatedList>
-      </div>
+    <div
+      className={cn(
+        "relative flex h-[320px] w-full flex-col overflow-hidden bg-transparent",
+        className,
+      )}
+    >
+      <AnimatedList>
+        {notifications.map((item, idx) => (
+          <Notification {...item} key={idx} />
+        ))}
+      </AnimatedList>
+    </div>
   );
 }
