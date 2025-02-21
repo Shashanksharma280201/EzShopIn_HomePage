@@ -59,7 +59,7 @@ const ProductCards: React.FC = () => {
                         <img
                             src={product.images[0] || '/images/barcode.jpg'}
                             alt={product.title}
-                            className="flex h-full bg-slate-400 w-full rounded-t-xl"
+                            className="flex h-full bg-slate-400 w-full rounded-xl"
                             style={{ objectFit: "cover" }}
                         />
                         <div className="flex flex-col gap-1 p-2 h-fit bg-gray-700 rounded-b-xl">

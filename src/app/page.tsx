@@ -40,7 +40,7 @@ export default function Home() {
         {/* bottom cards  */}
         <div className="flex relative flex-col w-full z-10 h-3/4 items-center justify-center lg:-top-[28vh] p-6">
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 w-full h-fit p-9">
-            <Card className="flex flex-col lg:-mt-[170px] bg-gradient-to-tr from-green-100 to-green-400/50 shadow-md z-1 border-none hover:shadow-xl rounded-2xl transition-shadow w-full lg:w-1/3 h-fit">
+            <Card className="flex flex-col lg:-mt-[170px] bg-gradient-to-tr from-blue-100 to-blue-400/50 shadow-md z-1 border-none hover:shadow-xl rounded-2xl transition-shadow w-full lg:w-1/3 h-fit">
               <CardHeader>
                 <CardTitle>Self Check-in Check-out</CardTitle>
               </CardHeader>
@@ -60,7 +60,7 @@ export default function Home() {
               </CardFooter>
             </Card>
 
-            <Card className="flex flex-col z-10 lg:mt-10 border-none bg-gradient-to-tr from-green-100 to-green-400/50 shadow-md z-1 hover:shadow-xl rounded-2xl transition-shadow w-full lg:w-1/3 h-fit">
+            <Card className="flex flex-col z-10 lg:mt-10 border-none bg-gradient-to-tr from-blue-100 to-blue-400/50 shadow-md z-1 hover:shadow-xl rounded-2xl transition-shadow w-full lg:w-1/3 h-fit">
               <CardHeader>
                 <CardTitle>Inventory Management</CardTitle>
               </CardHeader>
@@ -80,7 +80,7 @@ export default function Home() {
               </CardFooter>
             </Card>
 
-            <Card className="flex flex-col z-10 lg:-mt-[100px] border-none bg-gradient-to-tr from-green-100 to-green-400/50 shadow-md z-1 hover:shadow-xl rounded-2xl transition-shadow w-full lg:w-1/3 h-fit">
+            <Card className="flex flex-col z-10 lg:-mt-[100px] border-none bg-gradient-to-tr from-blue-100 to-blue-400/50 shadow-md z-1 hover:shadow-xl rounded-2xl transition-shadow w-full lg:w-1/3 h-fit">
               <CardHeader>
                 <CardTitle>Inventory Check</CardTitle>
               </CardHeader>
@@ -263,38 +263,6 @@ export default function Home() {
         </Accordion>
       </section>
 
-      {/* contact  */}
-      {/* <section
-        id="Contact"
-        className="flex flex-col h-screen mt-[10rem] bg-gradient-to-tr from-green-100/85 via-yellow-100/85 to-orange-100/85 font-mono w-full items-center justify-center font-ubuntu"
-      >
-        <h1 className="flex text-2xl md:text-4xl w-full md:w-1/2 p-4 mt-10 justify-center text-center font-semibold">
-          Start Shopping Smarter Today!
-        </h1>
-
-        <div className="flex flex-col md:flex-row w-full h-full items-center justify-center gap-9 p-9">
-          <div className="flex flex-col space-y-7 w-full pb-2 h-fit bg-gradient-to-tl from-gray-300 via-gray-200 to-gray-400 rounded-2xl shadow-xl items-center justify-center">
-            <h1 className="flex text-3xl">Contact us</h1>
-            <div className="flex flex-col w-fit h-fit justify-between items-center p-3">
-              <a href="tel:+919591678076">
-                <h1 className="flex p-4 text-lg lg:text-2xl opacity-75">
-                  +91 9591678076
-                </h1>
-              </a>
-              <a href="mailto:EzShopInindia@gmail.com">
-                <h1 className="flex lg:text-2xl text-lg opacity-75">
-                  EzShopIn.india@gmail.com
-                </h1>
-              </a>
-            </div>
-          </div>
-
-          <div className="flex flex-col space-y-8 w-full h-fit pb-4 bg-gradient-to-tl from-gray-300 via-gray-200 to-gray-400 rounded-2xl shadow-xl items-center justify-center">
-            <h1 className="flex text-3xl">Our Team</h1>
-            <Team />
-          </div>
-        </div>
-      </section> */}
 
       <Footer />
     </>
