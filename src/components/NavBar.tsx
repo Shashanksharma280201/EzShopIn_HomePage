@@ -52,7 +52,7 @@ const NavBar = () => {
                                 {/* <Link href="\Sign-in">
                                     <p className='flex items-center justify-center w-[4rem] text-black hover:text-purple-400'>Sign-in</p>
                                 </Link> */}
-                                <Link href="#">
+                                <Link href="/Sign-up">
                                     <Button>Sign-up</Button>
                                 </Link>
                             </div>
